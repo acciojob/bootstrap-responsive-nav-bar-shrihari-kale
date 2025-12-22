@@ -11,19 +11,21 @@
 <nav class="navbar navbar-expand-lg" style="background-color:#e2f3fd;">
   <div class="container-fluid">
 
-    <!-- Toggle Button -->
+    <!-- BRAND (IMPORTANT FOR CYPRESS) -->
+    <a class="navbar-brand" href="#">MySite</a>
+
+    <!-- TOGGLER -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Navbar Content -->
+    <!-- NAVBAR CONTENT -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <!-- Bootcamps -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
             Bootcamps
           </a>
           <ul class="dropdown-menu">
@@ -32,50 +34,22 @@
           </ul>
         </li>
 
-        <!-- Coding -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
             Coding
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Java</a></li>
-            <li><a class="dropdown-item" href="#">Python</a></li>
-          </ul>
-        </li>
-
-        <!-- Career Resources -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Career Resources
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Resume Tips</a></li>
-            <li><a class="dropdown-item" href="#">Interview Prep</a></li>
-          </ul>
-        </li>
-
-        <!-- Tech Fields -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Tech Fields
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Web Development</a></li>
-            <li><a class="dropdown-item" href="#">AI & ML</a></li>
-          </ul>
         </li>
 
       </ul>
 
-      <!-- Search -->
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search">
+        <input class="form-control me-2" type="search">
         <button class="btn btn-outline-success">Search</button>
       </form>
-
     </div>
   </div>
 </nav>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
