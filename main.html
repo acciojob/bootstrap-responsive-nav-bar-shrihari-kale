@@ -8,44 +8,88 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg" style="background-color:#e2f3fd;">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg" style="background-color:#e3f2fd">
+  <div class="container">
 
-    <!-- BRAND (IMPORTANT FOR CYPRESS) -->
-    <a class="navbar-brand" href="#">MySite</a>
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="https://acciojob.com/src/Navbar/logo.svg" width="100" alt="Logo">
+    </a>
 
-    <!-- TOGGLER -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent">
+    <!-- Toggle button (Mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- NAVBAR CONTENT -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Bootcamps
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Bootcamps</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Full Stack</a></li>
+            <li><a class="dropdown-item" href="#">Data Science</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Coding</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Java</a></li>
             <li><a class="dropdown-item" href="#">Python</a></li>
           </ul>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Coding
-          </a>
-        </li>
+       <!-- Career Resources Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="careerDropdown"
+     role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Career Resources
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="careerDropdown">
+    <li><a class="dropdown-item" href="#">Resume Tips</a></li>
+    <li><a class="dropdown-item" href="#">Interview Prep</a></li>
+    <li><a class="dropdown-item" href="#">Job Portal</a></li>
+    <li><a class="dropdown-item" href="#">Career Guidance</a></li>
+  </ul>
+</li>
 
-      </ul>
+<!-- Tech Fields Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="techDropdown"
+     role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Tech Fields
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="techDropdown">
+    <li><a class="dropdown-item" href="#">Web Development</a></li>
+    <li><a class="dropdown-item" href="#">Data Science</a></li>
+    <li><a class="dropdown-item" href="#">AI & ML</a></li>
+    <li><a class="dropdown-item" href="#">Cyber Security</a></li>
+  </ul>
+</li>
 
+<!-- News & Commentary Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="newsDropdown"
+     role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    News & Commentary
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+    <li><a class="dropdown-item" href="#">Tech News</a></li>
+    <li><a class="dropdown-item" href="#">Industry Updates</a></li>
+    <li><a class="dropdown-item" href="#">Opinions</a></li>
+    <li><a class="dropdown-item" href="#">Editorials</a></li>
+  </ul>
+</li>
+
+
+      <!-- Search box -->
       <form class="d-flex">
-        <input class="form-control me-2" type="search">
-        <button class="btn btn-outline-success">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
+
     </div>
   </div>
 </nav>
