@@ -11,26 +11,30 @@
 <nav class="navbar navbar-expand-lg" style="background-color:#e2f3fd;">
   <div class="container-fluid">
 
-    <!-- Brand -->
-    <a class="navbar-brand drowpdown-toggle" href="#">Bootcamp</a>
-
-    <!-- Toggle Button (for mobile) -->
+    <!-- Toggle Button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
+      data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Navbar Links -->
+    <!-- Navbar Content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        
-       
-
-        <!-- Coding Dropdown -->
+        <!-- Bootcamps -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Bootcamps
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Java</a></li>
+            <li><a class="dropdown-item" href="#">Python</a></li>
+          </ul>
+        </li>
+
+        <!-- Coding -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
             Coding
           </a>
           <ul class="dropdown-menu">
@@ -39,9 +43,9 @@
           </ul>
         </li>
 
-        <!-- Career Resources Dropdown -->
+        <!-- Career Resources -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
             Career Resources
           </a>
           <ul class="dropdown-menu">
@@ -50,9 +54,9 @@
           </ul>
         </li>
 
-        <!-- Tech Fields Dropdown -->
+        <!-- Tech Fields -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
             Tech Fields
           </a>
           <ul class="dropdown-menu">
@@ -61,18 +65,14 @@
           </ul>
         </li>
 
-        <!-- Normal Link -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">News & Commentary</a>
-        </li>
-
       </ul>
 
-      <!-- Search Form -->
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      <!-- Search -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success">Search</button>
       </form>
+
     </div>
   </div>
 </nav>
